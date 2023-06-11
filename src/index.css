@@ -1,27 +1,56 @@
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
 }
 
-.camera {
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    margin: 0 auto;
-    width: 500px;
-    height: 375px;
+.app-title {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-.button {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
+.camera-container {
+  width: 400px;
+  height: 300px;
+  border: 2px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.webcam {
+  width: 100%;
+  height: 100%;
+}
+
+.captured-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.capture-button,
+.retake-button,
+.download-link {
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.download-link:hover {
+  text-decoration: underline;
 }
